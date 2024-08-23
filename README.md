@@ -14,3 +14,38 @@ This is an Android application that calculates the Body Mass Index (BMI) based o
   - **Overweight:** BMI between 25 and 29.9
   - **Obese:** BMI ≥ 30
 - **Result Display:** Shows the calculated BMI value along with the BMI category.
+
+## Getting Started
+
+### Prerequisites
+
+- **Android Studio:** Ensure that you have [Android Studio](https://developer.android.com/studio) installed on your machine.
+- **Gradle:** The project uses Gradle as the build system.
+
+### Installation
+
+1. Clone this repository to your local machine:
+    ```bash
+    git clone https://github.com/YoThoughtss/BMI_Checker.git
+    ```
+   
+2. Open the project in Android Studio:
+    - Go to `File > Open`, and select the cloned project.
+
+3. Build and run the app:
+    - Click the "Run" button in Android Studio to compile and launch the app in the emulator or on a physical device.
+
+### Usage
+
+1. **Enter Weight:**
+   - Input your weight in the provided field and select the appropriate unit (Kilograms or Pounds) from the dropdown menu.
+
+2. **Enter Height:**
+   - Input your height and select the appropriate unit (Meters, Centimeters, Feet, or Inches) from the dropdown menu.
+
+3. **Calculate BMI:**
+   - Click on the "Calculate BMI" button to compute your BMI and display the result along with the corresponding BMI category.
+  
+## Acknowledgements
+
+- Developed by: **Jayvee Somido**
