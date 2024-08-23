@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Initialize views
+        // hook
         etWeight = findViewById(R.id.et_weight);
         etHeight = findViewById(R.id.et_height);
         spinnerWeightUnit = findViewById(R.id.spinner_weight_unit);
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         btnCalculate = findViewById(R.id.btn_calculate);
         tvResult = findViewById(R.id.tv_result);
 
-        // Set up unit spinners
+        // array for spinners
         ArrayAdapter<CharSequence> weightAdapter = ArrayAdapter.createFromResource(this,
                 R.array.weight_units, android.R.layout.simple_spinner_item);
         weightAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         heightAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerHeightUnit.setAdapter(heightAdapter);
 
-        // Set button click listener
+        // button listener
         btnCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    // BMI Calculation method
+    // BMI Calculation class
     private void calculateBMI() {
         String weightStr = etWeight.getText().toString();
         String heightStr = etHeight.getText().toString();
@@ -61,23 +61,22 @@ public class MainActivity extends AppCompatActivity {
                 double weight = Double.parseDouble(weightStr);
                 double height = Double.parseDouble(heightStr);
 
-                // Convert weight and height based on selected units
                 String selectedWeightUnit = spinnerWeightUnit.getSelectedItem().toString();
                 String selectedHeightUnit = spinnerHeightUnit.getSelectedItem().toString();
 
                 if (selectedWeightUnit.equals("Pounds")) {
-                    weight = weight * 0.453592; // Convert pounds to kilograms
+                    weight = weight * 0.453592;
                 }
 
                 switch (selectedHeightUnit) {
                     case "Feet":
-                        height = height * 0.3048; // Convert feet to meters
+                        height = height * 0.3048;
                         break;
                     case "Inches":
-                        height = height * 0.0254; // Convert inches to meters
+                        height = height * 0.0254;
                         break;
                     case "Centimeters":
-                        height = height / 100; // Convert centimeters to meters
+                        height = height / 100;
                         break;
                     case "Meters":
                         // No conversion needed for meters
