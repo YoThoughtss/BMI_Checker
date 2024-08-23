@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BMI Checker</string>
+    <string-array name="weight_units">
+        <item>Kilograms</item>
+        <item>Pounds</item>
+    </string-array>
+
+    <string-array name="height_units">
+        <item>Meters</item>
+        <item>Centimeters</item>
+        <item>Feet</item>
+        <item>Inches</item>
+    </string-array>
+</resources>

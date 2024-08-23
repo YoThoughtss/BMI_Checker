@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--Text view for the app title-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/holo_blue_dark"
+        tools:ignore="HardcodedText" />
+
+    <!--Weight-->
+    <TextView
+        android:id="@+id/tv_label_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        tools:ignore="HardcodedText" />
+
+
+    <EditText
+        android:id="@+id/et_weight"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:hint="Enter weight"
+        android:inputType="numberDecimal"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/spinner_weight_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp" />
+
+
+    <!--Height-->
+    <TextView
+        android:id="@+id/tv_label_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_margin="10dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/et_height"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:hint="Enter weight in Kg"
+        android:inputType="numberDecimal"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/spinner_height_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"/>
+
+
+
+    <!--Button To Calculate-->
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate BMI"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        tools:ignore="HardcodedText" />
+
+    <!--Result-->
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your BMI will appear here"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        tools:ignore="HardcodedText" />
+
+    <!--Author-->
+    <!--<TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by : Jayvee Somido"
+        android:textSize="20sp"
+        android:layout_marginTop="90dp"
+        android:layout_gravity="center"
+        />-->
+
+</LinearLayout>
