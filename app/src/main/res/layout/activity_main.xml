@@ -72,7 +72,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="8dp"
         android:gravity="center"
-        android:hint="Enter weight in Kg"
+        android:hint="Enter height"
         android:inputType="numberDecimal"
         tools:ignore="HardcodedText" />
 
